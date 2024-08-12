@@ -37,3 +37,43 @@ const car = {
 console.log(car.make)
 console.log(car.model)
 
+// Duplicate the following array using the spread operator and assign it to `controversialPizzaToppings`. Then, log the variable.
+
+// const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
+
+// Your code here
+const controversialPizzaToppings = [...pizzaToppings];
+console.log(controversialPizzaToppings)
+
+// Duplicate the following object and spread its values into a new variable `myCar`.
+
+// const car = {
+//   make: 'Audi',
+//   model: 'q5',
+// };
+
+// Change the `model` property of `myCar` to 'q7'. Log both objects.
+
+// Your code here
+const clonedCar = { ...car }
+
+clonedCar.model = 'q7'
+console.log('Original: ', car)
+console.log('Clone: ',clonedCar)
+
+// Create an object named userProfile. 
+// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Use propertyName as a dynamic key in userProfile, assigning a relevant value.
+
+// Your code here
+const propertyName1 = 'username'
+const propertyName2 = 'age'
+const propertyName3 = 'email'
+
+const userProfile = {
+  [propertyName1]: 'john_doe',
+  [propertyName2]: 18,
+  [propertyName3]: 'john@email.com',
+}
+
+console.log(userProfile)
